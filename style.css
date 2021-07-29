@@ -1,162 +1,278 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Ubuntu', sans-serif;
-  color: #333335;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #333335;
 }
+
 
 /* image slide show */
 
 .slideshow {
-  width: 100%;
-  height: 60vh;
-  overflow: hidden;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
 }
 
 .navigation {
-  display: flex;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-img {
-  max-width: 1000x;
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 input[name='r'] {
-  position: absolute;
-  display: none;
+    position: absolute;
+    display: none;
 }
 
 .slides {
-  width: 300%;
-  height: 99%;
-  display: flex;
-  animation: slider 6s ease-in-out infinite;
+    width: 300%;
+    height: 99%;
+    display: flex;
+    animation: slider 6s ease-in-out infinite;
 }
 
 .slide {
-  width: 100%;
+    width: 100%;
 }
 
 .slide img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
-#r1:checked ~ .s1 {
-  margin-left: 0%;
+#r1:checked~.s1 {
+    margin-left: 0%;
 }
 
-#r2:checked ~ .s1 {
-  margin-left: -33.3%;
+#r2:checked~.s1 {
+    margin-left: -33.3%;
 }
 
-#r3:checked ~ .s1 {
-  margin-left: -66.54%;
+#r3:checked~.s1 {
+    margin-left: -66.54%;
 }
+
 
 /* animating slides */
 
 @keyframes slider {
-  0% {
-    margin-left: 0%;
-  }
-  10% {
-    margin-left: 0%;
-  }
-  43.3% {
-    margin-left: -100%;
-  }
-  86.54% {
-    margin-left: -200%;
-  }
-  100% {
-    margin-left: 0%;
-  }
+    0% {
+        margin-left: 0%;
+    }
+    10% {
+        margin-left: 0%;
+    }
+    43.3% {
+        margin-left: -100%;
+    }
+    86.54% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0%;
+    }
 }
+
 
 /* image slide show */
 
+
 /* content */
+
 .content {
-  margin: 20px;
-  padding: 20px;
-  overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
 }
 
 .icons {
-  height: 10vh;
-  color: red;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-  margin: 10px;
-  color: #333335;
+    height: 10vh;
+    color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    color: #333335;
 }
 
 .icons a {
-  text-decoration: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  color: #333335;
-  padding: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #333335;
+    padding: 10px;
 }
+
 .icons i {
-  font-size: 2.675em;
+    font-size: 2.675em;
 }
+
 .icons p {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .rankHead {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 .rankHead #top {
-  font-weight: 900;
+    font-weight: 900;
 }
 
 .rankHead a {
-  text-decoration: none;
-  font-size: 1.675em;
-  color: #333335;
+    text-decoration: none;
+    font-size: 1.675em;
+    color: #333335;
 }
 
 .top-ranking .topItems {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  padding: 10px 0;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    width: 100%;
+    padding: 10px 0;
 }
 
 .rankCatalogue {
-  display: flex;
-  justify-content: space-around;
-  /* align-items: center; */
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    /* align-items: center; */
 }
+
 .rankCatalogue i {
-  /* position: absolute; */
+    font-size: 2.675em;
 }
+
 .rankCatalogue .img {
-  max-width: 300px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  /* max-height: 400px; */
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    max-height: 400px;
 }
 
 .rankCatalogue .img img {
-  width: 100%;
-  height: 90%;
+    position: relative;
+    max-width: 100%;
+    min-height: 140px;
+    border-radius: 5px;
+}
+
+
+/* deals / new arrivals */
+
+#dealOne {
+    display: flex;
+}
+
+.deals {
+    display: flex;
+}
+
+
+/* for your interest */
+
+.interest .rowOne {
+    display: flex;
+    margin: 10px;
+}
+
+.interest .rowOne #bgOne {
+    background: #D3DDEC;
+    color: #4980B6;
+}
+
+.interest .rowOne #bgTwo {
+    background: #CFD6F2;
+    color: #526EC1;
+}
+
+.interest .rowOne #bgThree {
+    background: #D2EEED;
+    color: #49AEB8;
+}
+
+.interest .rowOne #bgFour {
+    background: #FAE6CB;
+    color: #A87739;
+}
+
+.interest .rowOne .interestOne {
+    position: relative;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.interest .rowOne .interestOne .itemImg {
+    position: relative;
+    max-width: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interest .rowOne .interestOne .itemImg img {
+    position: relative;
+    max-width: 90%;
+    height: 120px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+/* just for you*/
+
+.justForYou .prRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.justForYou .articleRow .items {
+    margin: 0 auto;
+}
+
+.justForYou .articleRow .items .imgItem {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+}
+
+.justForYou .articleRow .items .imgItem img {
+    position: relative;
+    max-width: 80%;
+    min-height: 150px;
+}
+
+.justForYou p span {
+    color: #adadad;
+}
+
+.justForYou .price {
+    font-weight: bold;
 }
