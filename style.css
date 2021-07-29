@@ -276,3 +276,28 @@ input[name='r'] {
 .justForYou .price {
     font-weight: bold;
 }
+
+
+/* responsive */
+
+@media only screen and (max-width: 500px) {
+    .deals,
+    .rowOne {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .icons {
+        font-size: 10px;
+    }
+    .prRow {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .topItems {
+        flex-direction: column;
+    }
+}
